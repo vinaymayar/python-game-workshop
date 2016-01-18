@@ -1,4 +1,4 @@
-"""lesson1/exercises.py
+"""lesson1/solutions.py
 
 This file contains exercises to demonstrate how to
 
