@@ -85,13 +85,19 @@ Create the following variables.
 my_name with the value of your name
 my_age with the value of your age
 ice_cream_price with the value of the price of ice cream (if you don't know, guessing is totally fine)
-like_rain with the value of wheter you like rain or not
+like_rain with the value True if you like rain or False if you don't
 
 '''
 
-# print("Hi. I am {} and I am {} years old. Ice cream now costs {} reais and the fact that i like rain is {}".format(my_name, my_age, ice_cream_price, like_rain))
+my_name = "Lara"
+my_age = 20
+ice_cream_price = 3.5
+like_rain = True
+
+print("Hi. I am {} and I am {} years old. Ice cream now costs {} reais and the fact that i like rain is {}".format(my_name, my_age, ice_cream_price, like_rain))
 
 # Which types were the variables you created?
+# my_name is a string, my_age is a integer, ice_cream_price is a float and like_rain is a boolean.
 
 
 # 3. Reassinging variables
@@ -110,7 +116,7 @@ Change the value of my_int from 7 to 3.
 my_int = 7
 
 # Change the value of my_int to 3!
-# ADD YOUR CODE HERE!
+my_int = 3
 
 # This line will print the varible my_int to the console:
 
@@ -119,13 +125,17 @@ print("my_int is not 7 anymore, it's {}".format(my_int))
 # 4. Variables in terms of other variables.
 # Not all variables need to assigned to constant values. They can also be assigned to other variables or expressions.
 
-'''
-year_i_was_born =
-this_year =
+year_i_was_born = 1995
+this_year = 2016
 my_age = this_year - year_i_was_born # We defined my_age in terms of the variables this_year and year_i_was born
-'''
+
+print("My age is {}".format(my_age))
+
 # What happens to my_age if I reassign this_year or year_i_was_born?
 # Reassign one of the variables and see what happens!
+
+year_i_was_born = 1993
+print("The year I was born is {}, but my age is still {}".format(year_i_was_born, my_age))
 
 
 # You can also reassign variables in terms of itself.
@@ -144,28 +154,49 @@ Use your newly acquired coding skills to create a calculator for your meal.
 
 '''
 
+your_name = "Lara"
 
-'''
-your_name = ""
-
-# print("How much did your meal cost?")
 meal_price = 44.85
-tax =
-service =
-meal_final =
+tax = meal_price * 6.75 / 100 # you can you the "/" operator
+service = meal_price * 0.1    # or just write the decimal number itself.
+meal_final_price = meal_price + tax + service
 
-print ({}"'s calculator says the total price is: {} reais".format(your_name, meal_final))
-'''
+print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_final_price))
+
 # Try writing the tax value using the "/" operator.
 
 
 # Bonus: How could you write your bill calculator using less variables?
 # What are the advantages and the disadvantages of that?
-# Bonus 2: How could you write the calculator in 1 line of code (not ocunting the print statement).
+# You can remove meal_final_price and instead just reassign meal_price.
+# This avoids using unnecessary variables, but also prevents you from retrieving the original meal_price if you need it in the future.
+meal_price = 44.85
+tax = meal_price * 6.75 / 100 # you can you the "/" operator
+service = meal_price * 0.1    # or just write the decimal number itself.
+meal_price = meal_price + tax + service
+
+print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_price))
+
+# Bonus 2: How could you write the calculator in 1 line of code (not counting the print statement).
+meal_price = 44.85 + 44.85 * 6.75/100 + 44.85 * 0.1
+
+print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_price))
+
+# However, this is not very good practice, since now, it you wanted to change the initial value of the meal, you would need to change all three times "44.85" appears. Ideally, values that appear frequently should be stored on varibles.
+
 # Bonus 3: Instead of always having the same vaue for the meal. Ask the user how much was their meal. You can do this by replacing "44.85" for "input()"
 # Something like:
 # meal_price = input()
 # Don't forget to uncomment the print statement.
+
+print("How much did your meal cost?")
+meal_price = input()
+tax = meal_price * 6.75 / 100 # you can you the "/" operator
+service = meal_price * 0.1    # or just write the decimal number itself.
+meal_final_price = meal_price + tax + service
+
+print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_final_price))
+
 
 '''
 Now, do it all on your own. What's the area of a circle?
@@ -175,3 +206,10 @@ Write a program that asks the radius of a circle and prints the value of its are
 Rememeber that the formula for the circle's area is
   area = pi * (radius)^2
 '''
+
+print("what's the radius of your circle?")
+radius = input()
+pi = 3.1415
+area = radius * radius * pi
+
+print("the are of the circle is {}".format(area))
