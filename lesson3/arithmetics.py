@@ -5,7 +5,8 @@
 # is the type of the result.
 
 # Divide your smallest integer value by your largest integer value. Is the
-# result what you expected? Now, change the variables to floats. What to you get?
+# result what you expected? Now, do the same with your float variable and an
+# integer variable. What to you get?
 
 # Fill in the blanks, try adding the following two string variables and print
 # the result. What do you get?

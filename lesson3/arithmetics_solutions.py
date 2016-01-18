@@ -14,14 +14,13 @@ f = 5.5
 print (a + f) # This prints a float
 
 # Divide your smallest integer value by your largest integer value. Is the
-# result what you expected? Now, change one of the variables to a float.
-# What to you get?
+# result what you expected? Now, do the same with your float variable and an
+# integer variable. What to you get?
 
 print (a / b) # The result is 0, because the result is round to an int.
 
-a = 5.0
-print (a / b) # The result is 0.71, because the result is a float, since one of
-              # the operands is a float.
+print (a / f) # The result is a float, because the result is a float, since one
+              # of the operands is a float.
 
 # Fill in the blanks, try adding the following two string variables and print
 # the result. What do you get?
