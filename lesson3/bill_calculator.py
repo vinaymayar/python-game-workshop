@@ -11,9 +11,9 @@ your_name = ""
 meal_price = 44.85
 tax =
 service =
-meal_final =
+meal_final_price =
 
-print ({}"'s calculator says the total price is: {} reais".format(your_name, meal_final))
+print (your_name + "'s calculator says the total price is: " + str(meal_final_price) + " reais")
 
 # Try writing the tax value using the "/" operator.
 

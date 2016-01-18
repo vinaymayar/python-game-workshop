@@ -32,14 +32,10 @@ print("5 + 5 = {}".format(result))
 #  ds9 = 42
 #  %correct = 100
 
+# Exercise 1:
 
-'''
-Exercise 1:
-
-Create a variable called my_age and set its value to your current age.
-At last, print the phrase "Hi! I am (your age) years old."
-'''
-
+# Create a variable called my_age and set its value to your current age.
+# At last, print the phrase "Hi! I am (your age) years old."
 
 # 2) Variable types
 print("\nVariable types")
@@ -77,17 +73,13 @@ print("They are the same. Woah!")
 # The difference between the two is that using double quotes makes it easy to include apostrophes.
 mystring = "Don't worry about apostrophes"
 
+# Exercise 2
+# Create the following variables.
 
-'''
-Exercise 2
-Create the following variables.
-
-my_name with the value of your name
-my_age with the value of your age
-ice_cream_price with the value of the price of ice cream (if you don't know, guessing is totally fine)
-like_rain with the value True if you like rain or False if you don't
-
-'''
+# my_name with the value of your name
+# my_age with the value of your age
+# ice_cream_price with the value of the price of ice cream (if you don't know, guessing is totally fine)
+# like_rain with the value True if you like rain or False if you don't
 
 my_name = "Lara"
 my_age = 20
@@ -99,16 +91,20 @@ print("Hi. I am {} and I am {} years old. Ice cream now costs {} reais and the f
 # Which types were the variables you created?
 # my_name is a string, my_age is a integer, ice_cream_price is a float and like_rain is a boolean.
 
+# 3. Operations with variables.
 
-# 3. Reassinging variables
+# Your learned how to do arithmetics on lesson 2. Now, you will see that we can
+# do the same with variables. Take a look at the file arithmetics.py for some
+# exercises about variable arithmetics.
+
+
+# 4. Reassinging variables
 # Now you know how to use variables to store values.
 
 # Say my_int = 7. This doesn't have to be the value of the variable forever.You can change the value of a variable by assigning it to a new value, or "reassigning" it.
 
-'''
-Exercise 3
-Change the value of my_int from 7 to 3.
-'''
+# Exercise 3
+# Change the value of my_int from 7 to 3.
 
 # my_int is set to 7 below. What do you think
 # will happen if we reset it to 3 and print the result?
@@ -122,94 +118,25 @@ my_int = 3
 
 print("my_int is not 7 anymore, it's {}".format(my_int))
 
-# 4. Variables in terms of other variables.
-# Not all variables need to assigned to constant values. They can also be assigned to other variables or expressions.
-
-year_i_was_born = 1995
-this_year = 2016
-my_age = this_year - year_i_was_born # We defined my_age in terms of the variables this_year and year_i_was born
-
-print("My age is {}".format(my_age))
-
-# What happens to my_age if I reassign this_year or year_i_was_born?
-# Reassign one of the variables and see what happens!
-
-year_i_was_born = 1993
-print("The year I was born is {}, but my age is still {}".format(year_i_was_born, my_age))
-
+# 5. Variables in terms of other variables.
+# Not all variables need to assigned to constant values. They can also be
+# assigned to other variables or expressions. Take a look at the file
+# variables.py and fill in the blanks.
 
 # You can also reassign variables in terms of itself.
 x = 15 # This line assigns x to the value of 15.
-x = x + 1 # This line computes the expression x+1, and assigns its value o the variable x. So, what's the final value of x?
+x = x + 1 # This line computes the expression x+1, and assigns its value o the
+          # variable x. So, what's the final value of x? Print it and see it
+          # for yourself.
 
-x += 1 # This line is another way of writing x = x + 1 in Python. What's the value of x after this?
+x += 1 # This line is another way of writing x = x + 1 in Python. What's the
+       # value of x after this?
 
+# Exercise 4: Bill calculator.
 
-'''
-Exercise 4: Bill calculator.
-
-The total cost of your meal was 44.85 reais. However, there's a tax of 6.75% added to that. Moreover, there's still a 10% service charge.
-
-Use your newly acquired coding skills to create a calculator for your meal.
-
-'''
-
-your_name = "Lara"
-
-meal_price = 44.85
-tax = meal_price * 6.75 / 100 # you can you the "/" operator
-service = meal_price * 0.1    # or just write the decimal number itself.
-meal_final_price = meal_price + tax + service
-
-print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_final_price))
-
-# Try writing the tax value using the "/" operator.
+# Take a look at the file bill_calculator.py and fill in the missing code.
 
 
-# Bonus: How could you write your bill calculator using less variables?
-# What are the advantages and the disadvantages of that?
-# You can remove meal_final_price and instead just reassign meal_price.
-# This avoids using unnecessary variables, but also prevents you from retrieving the original meal_price if you need it in the future.
-meal_price = 44.85
-tax = meal_price * 6.75 / 100 # you can you the "/" operator
-service = meal_price * 0.1    # or just write the decimal number itself.
-meal_price = meal_price + tax + service
+# Exercise 5: Area of a circle.
 
-print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_price))
-
-# Bonus 2: How could you write the calculator in 1 line of code (not counting the print statement).
-meal_price = 44.85 + 44.85 * 6.75/100 + 44.85 * 0.1
-
-print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_price))
-
-# However, this is not very good practice, since now, it you wanted to change the initial value of the meal, you would need to change all three times "44.85" appears. Ideally, values that appear frequently should be stored on varibles.
-
-# Bonus 3: Instead of always having the same vaue for the meal. Ask the user how much was their meal. You can do this by replacing "44.85" for "input()"
-# Something like:
-# meal_price = input()
-# Don't forget to uncomment the print statement.
-
-print("How much did your meal cost?")
-meal_price = input()
-tax = meal_price * 6.75 / 100 # you can you the "/" operator
-service = meal_price * 0.1    # or just write the decimal number itself.
-meal_final_price = meal_price + tax + service
-
-print ("{}'s calculator says the total price is: {} reais".format(your_name, meal_final_price))
-
-
-'''
-Now, do it all on your own. What's the area of a circle?
-
-Write a program that asks the radius of a circle and prints the value of its area.
-
-Rememeber that the formula for the circle's area is
-  area = pi * (radius)^2
-'''
-
-print("what's the radius of your circle?")
-radius = input()
-pi = 3.1415
-area = radius * radius * pi
-
-print("the are of the circle is {}".format(area))
+# Take a look at the file areas.py and write your own code!
