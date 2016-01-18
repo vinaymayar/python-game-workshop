@@ -8,6 +8,9 @@
 #   Multiply    10 * 2
 #   Divide      10 / 2
 
+# For all these exercises, you can add the answer directly to this file.
+# Reminder that you can use the Python shell as a calculator!
+
 # Exercise 1:
 #   Perform all basic arithmetic operators on 20 and 4 and print the results.
 
