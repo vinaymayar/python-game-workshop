@@ -58,11 +58,11 @@ print("The value of pi is {}".format(pi))
 # You can use variables to store booleans like this:
 a = True
 b = False
-print("a is {}, but b it {}".format(a, b))
+print("a is {}, but b is {}".format(a, b))
 # Note that both True and False have their first letter capitalized.
 
 # At last, the final data type we will be learning in this lesson is a string.
-# A string is used to represent words, phrases or characters. Strings are always defined either with a single quote or a double quotes.
+# A string is used to represent words, phrases or characters. Strings are always defined either with a single quote or a double quote.
 
 my_first_string = "Hello World!"
 my_second_string = 'Hello World!'
@@ -122,11 +122,12 @@ print("my_int is not 7 anymore, it's {}".format(my_int))
 '''
 year_i_was_born =
 this_year =
-my_age = this_year - year_i_was_born # We defined my_age in terms of the variables this_year and year_i_was born
+my_age = this_year - year_i_was_born
 '''
+
+# We defined my_age in terms of the variables this_year and year_i_was born
 # What happens to my_age if I reassign this_year or year_i_was_born?
 # Reassign one of the variables and see what happens!
-
 
 # You can also reassign variables in terms of itself.
 x = 15 # This line assigns x to the value of 15.
@@ -159,10 +160,11 @@ print ({}"'s calculator says the total price is: {} reais".format(your_name, mea
 # Try writing the tax value using the "/" operator.
 
 
-# Bonus: How could you write your bill calculator using less variables?
+# Bonus: How could you write your bill calculator using fewer variables?
 # What are the advantages and the disadvantages of that?
-# Bonus 2: How could you write the calculator in 1 line of code (not ocunting the print statement).
-# Bonus 3: Instead of always having the same vaue for the meal. Ask the user how much was their meal. You can do this by replacing "44.85" for "input()"
+# Bonus 2: How could you write the calculator in 1 line of code (not counting the print statement)?
+# Bonus 3: Instead of always having the same value for the meal, ask the user how much the meal cost.
+# You can do this by replacing "44.85" with "input()"
 # Something like:
 # meal_price = input()
 # Don't forget to uncomment the print statement.
@@ -172,6 +174,6 @@ Now, do it all on your own. What's the area of a circle?
 
 Write a program that asks the radius of a circle and prints the value of its area.
 
-Rememeber that the formula for the circle's area is
+Remember that the formula for the circle's area is
   area = pi * (radius)^2
 '''
