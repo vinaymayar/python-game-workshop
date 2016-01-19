@@ -12,10 +12,10 @@
 # If none of the conditions are met, you shouldn't be allowed in the club.
 
 print("What's your name?")
-name = input() # The input() function allows you to get user input, don't worry
-               # about functions now.
+name = raw_input() # The raw_input() function allows you to get user input,
+                   # don't worry about functions now.
 print("What's your age?")
-age = input ()
+age = input()
 
 if name == 'Bill Gates' or ...
 # print something saying that the guest was allowed in the club

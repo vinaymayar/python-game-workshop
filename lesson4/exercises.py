@@ -47,10 +47,10 @@ print(x < 3)  # comparison! prints out True
 # values.
 
 # Uncomment the lines below, and see what they evalute to.
-# print(True and True)
-# print(True and False)
-# print(True or True)
-# print(True or False)
+# print("True and True equals " + str(True and True))
+# print("True and False equals " + str(True and False))
+# print("True or True equals " + str(True or True))
+# print("True or False equals " + str(True or False))
 
 
 # The and operator evaluates an expression to True if both Boolean values are
