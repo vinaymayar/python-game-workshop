@@ -1,12 +1,12 @@
 # Exercise 3:
 #
-# In this exercise we will create a program that indetifies whether someone can
+# In this exercise we will create a program that identifies whether someone can
 # enter a super secret club.
 # Below are the people that are allowed in the club.
 # If your name is Bill Gates, Steve Jobs or Jesus, you should be allowed in the
 # club.
 # If your name is not one of the above, but your name is Maria and you have less
-# than 30 years old, then you should be allowed on the club.
+# than 30 years old, then you should be allowed in the club.
 # If you don't fullfill the conditions above, but you are older than 100 years
 # old you should also be allowed.
 # If none of the conditions are met, you shouldn't be allowed in the club.

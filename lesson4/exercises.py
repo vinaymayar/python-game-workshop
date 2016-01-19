@@ -1,12 +1,12 @@
-# lesson3/exercises.py
+# lesson4/exercises.py
 
-# Variables
+# Control flow and conditionals
 #
 # This file contains exercises about Python conditionals.
 
-# Last lesson we saw that one of the different variable types are the booleans.
+# Last lesson, we saw that one of the different variable types are the booleans.
 # Python uses boolean variables to evaluate conditions.
-# Last time we directly assigned boolean values True and False, but the are
+# Last time, we directly assigned boolean values True and False, but they are
 # also returned when an expression is compared or evaluated.
 
 # 1. Comparison Operators
@@ -19,7 +19,7 @@
 #   >= for greater than or equal
 #   <= for less than or equal
 #
-# Don't mistake the == operator with the = operator we learned when studying
+# Don't mistake the == operator with the = operator that we learned when studying
 # variables.
 # The == operator (equal to) asks whether two values are the same as each other.
 # The = operator (assignment) puts the value on the right into the variable on
@@ -107,26 +107,26 @@ print(x < 3)  # prints out True
 # Control flow gives us this ability to choose among different paths depending
 # on what else is happening in the program.
 
-# The control flow statements we will be learning in this lesson are: if, else anf elif.
-# Each of these flow control statement decides what to do based on whether its
+# The control flow statements we will be learning in this lesson are: if, else
+# and elif.
+# Each of these flow control statements decides what to do based on whether its
 # condition is True or False.
 
 # In the code below, change the value of the variable name and see what happens
-# In special, try making equal to "Maria"
+# In special, try making it equal to "Maria"
 name = ""
 if name == "Maria":
     print("Hi, Maria.")
 
 # The if-statement seen above means the following.
-# “If this condition is true, execute the code in the clause.”
+# “If this condition is true, execute the code in the block.”
 # In Python, an if statement consists of the following:
 #   The if keyword
 #   A condition (that is, an expression that evaluates to True or False)
 #   A colon
-#   Starting on the next line, an indented block of code (called the if clause)
+#   Starting on the next line, an indented block of code (called the if block)
 
-# VERY IMPORTANT:
-# Identation in python.
+# VERY IMPORTANT: Identation in python.
 # Lines of Python code can be grouped together in blocks. You can tell when a
 # block begins and ends from the indentation of the lines of code. There are
 # three rules for blocks.
@@ -149,12 +149,12 @@ if name == "Joana":
 # How many blocks of code?
 
 # An if-statement can optionally be followed by an else-statement.
-# The else clause will be executed when the if statement’s condition is False.
+# The else blokc will be executed when the if statement’s condition is False.
 # Try changing the value of the variable password from the piece of code above
 # and see what happens.
 
-# The if and else statements allow us to make simply decisions. If we want to
-# make more complex control flow, we can use an elif statement.
+# The if and else statements allow us to make simple decisions. If we want to
+# make our code more complex, we can use an elif statement.
 # The elif statement is an “else if” statement that always follows an if or
 # another elif statement. It provides another condition that is checked only
 # if the previous conditions were False.
@@ -177,10 +177,7 @@ elif age < 18:
 # Exercise 4:
 # Now we will write our first game in python! Woooooooooah, we are so awesome!
 # Go to the file guess_game.py and follow the instructions.
-Challenge: guess-number game infinite number of guesses
--> finite number of guesses
-Super Challenge: hangman game infinite number of guesses
--> finite number of guesses
+
 
 
 

@@ -18,11 +18,11 @@ while(True): # don't worry about this either, but be sure to follow the indetati
   print("Make your guess:")
   guess = # remember how we get the input from the user?
   if (guess == secret_number):
-    # add a print statement letting the user know he made the right guess.
+    # add a print statement letting the user know they made the right guess.
     break; # don't worry about this line, we will learn more about this, when we
            # learn about loops!
 
-  # what should happen if their guess is too high?
-  # what should happen if their guess is too low?
+  # what should happen if the guess is too high?
+  # what should happen if the guess is too low?
 
 
