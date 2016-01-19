@@ -22,7 +22,7 @@ for n in range(101):
 
 # Exercise 5
 for n in range(5):
-    print('*') * n
+    print('*' * n)
 
 # Exercise 6
 n = 10
@@ -36,23 +36,43 @@ for letter in word:
     print(letter)
 
 # Exercise 8
-for i in range(3):
-    for j in range(4, 0, -1):
-        print('*') * j
+sentence = "Programming is fun!"
+previous_letter = ""
+string_until_consecutive_chars = ""
+
+for letter in sentence:
+    if letter == previous_letter:
+        break
+    string_until_consecutive_chars += letter
+    previous_letter = letter
+
+print(string_until_consecutive_chars)
 
 # Exercise 9
+for i in range(20):
+    if i % 5 == 0:
+        continue
+    print(i)
+
+# Exercise 10
+for i in range(2):
+    for j in range(4, 0, -1):
+        print('*' * j)
+
+# Exercise 11
 for i in range(11):
     for j in range(11):
         print(i * j)
 
-# Exercise 10
+# Exercise 12
 # 10 factorial is 3628800
 n = 10
 factorial = 1
 for i in range(1, n + 1):
     factorial *= i
+print(factorial)
 
-# Exercise 11
+# Exercise 13
 # The 12th Fibonacci number is 144
 n = 12
 fib = 0
@@ -62,3 +82,4 @@ for i in range(2, n + 1):
     fib = num1 + num2
     num1 = num2
     num2 = fib
+print(fib)
