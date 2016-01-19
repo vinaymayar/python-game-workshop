@@ -14,15 +14,18 @@
 from random import randint
 secret_number = randint(0, 100)
 
-while(True): # don't worry about this either, but be sure to follow the indetation
-  print("Make your guess:")
-  guess = # remember how we get the input from the user?
-  if (guess == secret_number):
-    # add a print statement letting the user know they made the right guess.
-    break; # don't worry about this line, we will learn more about this, when we
-           # learn about loops!
+while(True): # don't worry about this either, but be sure to follow the indentation level
+    print("Make your guess:")
+    guess = ... # remember how we get the input from the user?
 
-  # what should happen if the guess is too high?
-  # what should happen if the guess is too low?
+    if (guess == secret_number):
+        # add a print statement letting the user know they made the right guess.
 
+        break; # don't worry about this line, we will learn more about this, when we
+               # learn about loops!
 
+    elif ... # how can we check if the guess is too high?
+        # what should we do if the guess is too high?
+
+    else:
+        # what should we do if the guess is too low?
