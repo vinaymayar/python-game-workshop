@@ -37,6 +37,8 @@
 # Exercise 1 & 2:
 #   Complete the exercises in while_loop.py
 
+######################################################################
+
 # A for loop is a control flow statement that executes code repeatedly,
 # a given number of times
 #
@@ -80,6 +82,8 @@
 
 # Exercise 3 - 7:
 #   Complete the exercises in for_loop.py
+
+######################################################################
 
 # The break keyword can be used to "break" out of a for or while loop.
 # This terminates the loop and continues to the next instruction after
