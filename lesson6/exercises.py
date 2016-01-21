@@ -137,18 +137,4 @@ def double_if_greater_than_five(x):
 
 ######################################################################
 
-# BONUS SECTION
-
-# Anonymous functions
-
-######################################################################
-
-# BONUS SECTION
-
-# Scope of variables
-
-######################################################################
-
-# BONUS SECTION
-
-# Default arguments
+# CHALLENGE: Do the exercises in challenge.py
