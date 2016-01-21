@@ -120,7 +120,7 @@ if name == "Maria":
     print("Hi, Maria.")
 
 # The if-statement seen above means the following.
-# “If this condition is true, execute the code in the block.”
+# "If this condition is true, execute the code in the block."
 # In Python, an if statement consists of the following:
 #   The if keyword
 #   A condition (that is, an expression that evaluates to True or False)
@@ -134,7 +134,7 @@ if name == "Maria":
 #   Blocks begin when the indentation increases.
 #   Blocks can contain other blocks.
 #   Blocks end when the indentation decreases to zero or to an outer
-#   block’s indentation.
+#   block's indentation.
 
 # Blocks in Python are indented by 4 spaces more than its containing block.
 # Usually, the TAB button will automatically input 4 spaces in IDLE.
@@ -153,13 +153,13 @@ if name == "Joana":
 # How many blocks of code?
 
 # An if-statement can optionally be followed by an else-statement.
-# The else block will be executed when the if statement’s condition is False.
+# The else block will be executed when the if statement's condition is False.
 # Try changing the value of the variable password from the piece of code above
 # and see what happens.
 
 # The if and else statements allow us to make simple decisions. If we want to
 # make our code more complex, we can use an elif statement.
-# The elif statement is an “else if” statement that always follows an if or
+# The elif statement is an "else if" statement that always follows an if or
 # another elif statement. It provides another condition that is checked only
 # if the previous conditions were False.
 name = "Joao"
@@ -171,15 +171,15 @@ elif age < 18:
 
 how_many_potatoes = 4
 if how_many_potatoes > 20:
-    print "lots of potatoes"
+    print("lots of potatoes")
 elif how_many_potatoes > 5:
-    print "some potatoes, but not more than 20!"
+    print("some potatoes, but not more than 20!")
 elif how_many_potatoes > 10:
-    print "the program will never get here " + \
+    print("the program will never get here " + \
             "because the previous case will be " + \
-            "true if there are more than 5 potatoes."
+            "true if there are more than 5 potatoes.")
 elif how_many_potatoes > 0:
-    print "a few potatoes"
+    print("a few potatoes")
 
 # It is possible to have multiple elif statements.
 # However, notice that an control flow statement must always start with an if

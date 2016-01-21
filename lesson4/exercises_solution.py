@@ -173,15 +173,15 @@ elif age < 18:
 
 how_many_potatoes = 4
 if how_many_potatoes > 20:
-    print "lots of potatoes"
+    print("lots of potatoes")
 elif how_many_potatoes > 5:
-    print "some potatoes, but not more than 20!"
+    print("some potatoes, but not more than 20!")
 elif how_many_potatoes > 10:
-    print "the program will never get here " + \
+    print("the program will never get here " + \
             "because the previous case will be " + \
-            "true if there are more than 5 potatoes."
+            "true if there are more than 5 potatoes.")
 elif how_many_potatoes > 0:
-    print "a few potatoes"
+    print("a few potatoes")
 
 # It is possible to have multiple elif statements.
 # However, notice that an control flow statement must always start with an if
