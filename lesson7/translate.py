@@ -4,10 +4,7 @@
 # To do this, you will add new entries to the translation dictionary.
 
 def translate(list_of_words):
-  translation = {"my": "meu"}
+    translation = {"my": "meu"}
 
-
-print (translate(['my', 'name', 'is', 'Lara']))
-print (translate(['I', 'am', 'the', 'best']))
-
-
+print(translate(['my', 'name', 'is', 'Lara']))
+print(translate(['I', 'am', 'the', 'best']))

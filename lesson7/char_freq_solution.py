@@ -5,8 +5,13 @@
 # {"a": 2, "b": 1, "c": 1}.
 
 def char_freq(s):
-    pass
-
+    frequencies = {}
+    for char in s:
+        if char in frequencies:
+            frequencies[char] += 1
+        else:
+            frequencies[char] = 1
+    return frequencies
 
 print(char_freq("abca"))
 print(char_freq("elephant"))

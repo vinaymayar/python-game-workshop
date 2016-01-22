@@ -52,11 +52,11 @@ for i in animals:
 # Another cool thing you can do is to test if an element is a a list by using
 # the 'in' keyword
 if "cat" in animals:
-  print ("I have a cat!")
+    print ("I have a cat!")
 # You can also combine it with the not keyword and do something like
 
 if "duck" not in animals:
-  print("why don't I have a duck?")
+    print("why don't I have a duck?")
 
 # Exercises:
 # Do exercise 3 in the iterate.py file.
@@ -127,14 +127,14 @@ empty_dic = {}
 #  Since all these methods return a list, you can use them to iterate through
 #  the values and keys in a dictionary in a for loop, by doing something like:
 for key in my_cat.keys():
-  print (key)
+    print(key)
 
 for value in my_cat.values():
-  print (value)
+    print(value)
 
 for (key, value) in my_cat.items():
-  print ("The key is " + key)
-  print ("The value is " + value)
+    print("The key is " + key)
+    print("The value is " + value)
 
 # Exercises:
 # Do the exercises in the file dic_methods.py

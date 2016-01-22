@@ -3,7 +3,10 @@
 # the second list, and False otherwise
 
 def contains(list1, list2):
-    pass
+    for element in list2:
+        if element not in list1:
+            return False
+    return True
 
 
 print(contains([0, 1, 2, 3, 4, 5], [0, 5])) # should return True
