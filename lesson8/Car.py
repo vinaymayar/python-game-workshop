@@ -1,8 +1,8 @@
 class Car:
-    def __init__(self, make, model, mileage):
+    def __init__(self, make, model, kilometers_driven):
         self.make = make
         self.model = model
-        self.mileage = mileage
+        self.kilometers_driven = kilometers_driven
 
     def get_make(self):
         return self.make
@@ -10,8 +10,15 @@ class Car:
     def get_model(self):
         return self.model
 
-    def get_miles(self):
-        return self.miles
+    def get_kilometers(self):
+        return self.kilometers_driven
 
-    def drive(self, miles):
-        self.miles += miles
+    def set_kilometers(self, kilometers):
+        self.kilometers_driven = kilometers
+
+    def get_miles(self):
+        miles = self.kilometers_driven / 1.609
+        return miles
+
+    def drive(self, kilometers):
+        self.kilometers_driven += kilometers

@@ -1,93 +1,77 @@
+from Car import *
+
+# Exercise 1
+my_car = Car('Toyota', 'Prius', 0)
+your_car = Car('Toyota', 'Camry', 100)
+
+my_car.drive(100)
+print(my_car.get_kilometers())  #100
+
+your_car.drive(1000)
+print(your_car.get_kilometers())    #1100
+
+# Exercise 2
 class Student():
     def __init__(self, name, age, school):
-        # Exercise 1
         self.name = name
         self.age = age
         self.school = school
 
     def get_name(self):
-        # Exercise 3
         return self.name
 
     def get_age(self):
-        # Exercise 3
         return self.age
 
     def get_school(self):
-        # Exercise 3
         return self.school
 
     def set_school(self, school):
-        # Exercise 3
         self.school = school
-
-
-class Dog():
-    def __init__(self, name, breed, isHungry):
-        # Exercise 1
-        self.name = name
-        self.breed = breed
-        self.isHungry = isHungry
-
-    def get_name(self):
-        # Exercise 3
-        return self.name
-
-    def get_breed(self):
-        # Exercise 3
-        return self.breed
-
-    def get_isHungry(self):
-        # Exercise 3
-        return self.isHungry
-
-    def set_isHungry(self, isHungry):
-        # Exercise 3
-        self.isHungry = isHungry
-
 
 class Circle():
     def __init__(self, x, y, radius, color):
-        # Exercise 1
         self.x = x
         self.y = y
         self.radius = radius
         self.color = color
 
     def get_x(self):
-        # Exercise 3
         return self.x
 
     def get_y(self):
-        # Exercise 3
         return self.y
     
     def get_radius(self):
-        # Exercise 3
         return self.radius
     
     def get_color(self):
-        # Exercise 3
         return self.color
 
     def set_x(self, x):
-        # Exercise 3
         self.x = x
 
     def set_y(self, y):
-        # Exercise 3
         self.y = y
     
     def set_radius(self, radius):
-        # Exercise 3
         self.radius = radius
     
     def set_color(self, color):
-        # Exercise 3
         self.color = color
 
+# Exercise 3
+circle = Circle(0, 0, 5, 'purple')
+print(circle.get_color())
+circle.set_color('pink')
+print(circle.get_color())
 
-# Exercise 5
+john = Student('John', 18, 'Garfield High School')
+print(john.get_school())
+john.set_school('MIT')
+print(john.get_school())
+
+# Exercise 4
 class SoccerPlayer:
     def __init__(self, name, position, goals_scored):
         self.name = name
@@ -115,7 +99,7 @@ pele.score_goal()
 pele.score_hat_trick()
 print(pele.get_goals_scored())
 
-# Exercise 6
+# Exercise 5
 class Animal:
     def __init__(self, name, age):
         self.name = name
