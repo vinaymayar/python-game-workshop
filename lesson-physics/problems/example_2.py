@@ -12,6 +12,8 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Example 2')
 #This line creates a variable to store the RBG values for white.
 WHITE = (255, 255, 255)
+#This line initializes the clock.
+clock = pygame.time.Clock()
 
 #These lines load the ball image and convert it to a rect object.
 #Rect class stores info such as height, width, center, etc. of object.
@@ -35,12 +37,14 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
-    #For each loop, the horizontal velocity is increased to the right.
+    #This line makes sure the clock tracks the time to pass through this loop.
+    clock.tick()
+    #For each loop, the horizontal velocity is increased to the right by acceration * time.
     #This makes the ball accelerate.
-    vel[0] += .0001   
+    vel[0] += .0001 * clock.get_time() 
     #These lines update ball position based on velocity.
-    ballx += vel[0]
-    bally += vel[1]
+    ballx += vel[0] * clock.get_time()
+    bally += vel[1] * clock.get_time()
     #These lines update the screen on every iteration of the loop.
     #First line fills in white, second updates ball position in the screen, third updates display.
     screen.fill(WHITE)

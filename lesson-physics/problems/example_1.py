@@ -12,6 +12,8 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Example 1')
 #This line creates a variable to store the RBG values for white.
 WHITE = (255, 255, 255)
+#This line initializes the clock.
+clock = pygame.time.Clock()
 
 #These lines load the ball image and convert it to a rect object.
 #Rect class stores info such as height, width, center, etc. of object.
@@ -38,10 +40,13 @@ while True:
             sys.exit()
         #Pressing any key will cause the ball to move to the right.
         elif event.type == KEYDOWN:
-            vel = [.08, 0]    
+            vel = [.5, 0]
+    #This line makes sure the clock tracks the time during this pass through the loop.
+    clock.tick()
     #These lines update ball position based on velocity.
-    ballx += vel[0]
-    bally += vel[1]
+    #clock.get_time() finds time between the previous two calls of clock.tick()
+    ballx += vel[0] * clock.get_time()
+    bally += vel[1] * clock.get_time()
     #These lines establish boundaries.
     #At the sides of the screen, the ball will reverse directions.
     #ballx and bally indexed to top left corner of rect.

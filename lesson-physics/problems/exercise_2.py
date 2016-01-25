@@ -8,6 +8,7 @@ screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Motion 2')
 WHITE = (255, 255, 255)
+clock = pygame.time.Clock()
 
 #Loading ball image and converting to rect object.
 ball = pygame.image.load('ball.gif')
@@ -34,9 +35,11 @@ while True:
         #If down arrow key is pressed, increase velocity in y-direction by .05.
 
         #If up arrow key is pressed, decrease velocity in y-direction by .05.
+    #Tracking time.
+    clock.tick()
     #Updating ball position based on velocity.
-    ballx += vel[0]
-    bally += vel[1]
+    ballx += vel[0] * clock.get_time()
+    bally += vel[1] * clock.get_time()
     #**Establish boundaries.**
     #If ball strikes side walls, reverse x-velocity.
     

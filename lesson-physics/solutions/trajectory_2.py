@@ -3,12 +3,13 @@ from pygame.locals import *
 
 pygame.init()
 
-#Setting up screen.
+#Setting up screen and clock.
 screen_width = 1000
 screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption('Trajectory with Energy Loss')
+pygame.display.set_caption('Trajectory 2')
 WHITE = (255, 255, 255)
+clock = pygame.time.Clock()
 
 #Loading ball image and converting to rect object.
 ball = pygame.image.load('ball.gif')
@@ -29,18 +30,20 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit
-    #**In each loop, increase the y-velocity by g.**
-    
-    #**Update ball x- and y-positions based on x- and y-velocity.**
-
-    #**Establish boundaries.**
-    #In Trajectory 1, the ball bounced back with the same speed.
-    #In the real world, the ball loses speed when it strikes something.
-    #**This time, if the ball hits an edge, reverse the direction and multiply the speed by .9.**
-    
+    #Tracking time.
+    clock.tick()
+    #Updating y-velocity due to gravity.
+    vel[1] += g * clock.get_time()
+    #Updating position due to velocity.
+    ballx += vel[0] * clock.get_time()
+    bally += vel[1] * clock.get_time()
+    #If side is struck, x-velocity direction is reversed and magnitude is multiplied by .9.
+    #If top/bottom struck, y-velocity direction is reversed and magnitude is multiplied by .9.
+    if bally + ball_height > screen_height or bally < 0:
+        vel[1] = -.9*vel[1]
+    if ballx + ball_width > screen_width or ballx < 0:
+        vel[0] = -.9*vel[0]
     #Updating screen.
     screen.fill(WHITE)
     screen.blit(ball, (ballx, bally))
     pygame.display.flip()
-
-#**When you've completed this exercise, try Acceleration in Velocity.**

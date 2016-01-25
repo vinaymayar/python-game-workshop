@@ -2,12 +2,13 @@ import pygame, sys
 from pygame.locals import *
 pygame.init()
 
-#Setting up screen.##
+#Setting up screen and clock.##
 screen_width = 1000
 screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Motion 1')
 WHITE = (255, 255, 255)
+clock = pygame.time.Clock()
 
 #Loading ball image and converting to rect object.
 ball = pygame.image.load('ball.gif')
@@ -37,10 +38,12 @@ while True:
             
             
         #If down presses, set velocity to .2 down.
-        
+
+    #Tracking time through loop.
+    clock.tick()    
     #Updating ball position based on velocity.
-    ballx += vel[0]
-    bally += vel[1]
+    ballx += vel[0] * clock.get_time()
+    bally += vel[1] * clock.get_time()
     #Establishing boundaries; ball reverses if it hits edge.
     #ballx and bally indexed to top left corner of rect.
     if bally + ball_height > screen_height or bally < 0:
